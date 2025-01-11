@@ -149,7 +149,7 @@ public abstract class Queue {
             }
 
             if (indices.transferFamily == -1) {
-                // Some driversmay not have a transfer-only queue (for example iGPUs, when there's usually no need for DMA)
+                // Some drivers may not have a transfer-only queue (for example iGPUs, when there's usually no need for DMA)
                 int fallback = findFirstQueueIndex(queueFamilies, VK_QUEUE_TRANSFER_BIT);
                 if(fallback == -1) {
                     // the Adreno driver takes this further: it straight up has no queues with the transfer bit.
