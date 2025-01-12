@@ -30,7 +30,7 @@ public class SystemInfo {
                 String.format("%s", centralProcessor.getProcessorIdentifier().getName()).replaceAll("\\s+", " ") :
                 getCpuInfoLinux();
     }
-    /* Returns vendor cpu string from /proc/cpuinfo. Only Linux. */
+    /* Returns cpu model string from /proc/cpuinfo. Only Linux. */
     private static String getCpuInfoLinux(){
         try {
             // TODO: support cluster systems (big.LITTLE)
