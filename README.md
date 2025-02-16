@@ -80,6 +80,7 @@ This fork is made only for my personal purposes (as I own many exotic devices), 
 >- [x] Surface rotation fixes
 >- [x] SystemInfo OSHI init crash workaround. Vanilla Minecraft handles this fine
 >- [x] CPU brand name decode from /proc/cpuinfo on Linux/ARM platforms (WIP)
+>- [x] Include Linux ARM64 LWJGL natives
 
 
 ## Notes
