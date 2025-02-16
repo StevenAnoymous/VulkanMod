@@ -2,6 +2,8 @@
 
 This is a fabric mod that introduces a brand new **Vulkan** based voxel rendering engine to **Minecraft java** in order to both replace the default OpenGL renderer and bring performance improvements.
 
+This fork is made only for my personal purposes (as I own many exotic devices), **do not report any issues to upstream mod developers!**
+
 ### Why?
 - Highly experimental project that overhauls and modernizes the internal renderer for Minecraft. <br>
 - Updates the renderer from OpenGL 3.2 to Vulkan 1.2.  <br>
@@ -70,8 +72,17 @@ This is a fabric mod that introduces a brand new **Vulkan** based voxel renderin
 >- [ ] Shader support
 >- [ ] Removed Herobrine
 
+### Changes compared to the upstream
+>- [x] Lowered VK API version requirement (1.2 -> 1.1). Not like the mod uses 1.2+ features mandatory.
+>- [x] More robust vkQueue handling
+>- [x] PowerVR driver workaround (better compositeAlpha handling)
+>- [x] Buffer binding fixup
+>- [x] Surface rotation fixes
+>- [x] SystemInfo OSHI init crash workaround. Vanilla Minecraft handles this fine
+>- [x] CPU brand name decode from /proc/cpuinfo on Linux/ARM platforms (WIP)
+
 
 ## Notes
-- This mod is still in development, please report issues in the [issue tab](https://github.com/xCollateral/VulkanMod/issues) with logs attached!
+- This mod is still in development, please report issues in the [issue tab](https://github.com/whitebelyash/VulkanMod/issues) with logs attached!
 - This mode isn't just "minecraft on vulkan" (e.g: [zink](https://docs.mesa3d.org/drivers/zink.html) ), it is a full rewrite of the minecraft renderer.
 
