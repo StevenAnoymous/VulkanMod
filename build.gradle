@@ -42,7 +42,6 @@ project.ext.lwjglVersion = "3.3.3"
 project.ext.jomlVersion = "1.10.4"
 project.ext.winNatives = "natives-windows"
 project.ext.linuxNatives = "natives-linux"
-project.ext.linuxArmNatives = "natives-linux-arm64"
 project.ext.macosNatives = "natives-macos"
 project.ext.macosArmNatives = "natives-macos-arm64"
 
