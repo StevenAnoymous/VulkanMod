@@ -176,7 +176,7 @@ public class GlTexture {
             case GL30.GL_TEXTURE_MAX_LEVEL -> boundTexture.setMaxLevel(param);
             case GL30.GL_TEXTURE_MAX_LOD -> {}
             case GL30.GL_TEXTURE_MIN_LOD -> {}
-            case GL30.GL_TEXTURE_LOD_BIAS -> {10}
+            case GL30.GL_TEXTURE_LOD_BIAS -> {}
 
             case GL11.GL_TEXTURE_MAG_FILTER -> boundTexture.setMagFilter(param);
             case GL11.GL_TEXTURE_MIN_FILTER -> boundTexture.setMinFilter(param);
