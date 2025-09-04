@@ -174,9 +174,9 @@ public class GlTexture {
 
         switch (pName) {
             case GL30.GL_TEXTURE_MAX_LEVEL -> boundTexture.setMaxLevel(param);
-            case GL30.GL_TEXTURE_MAX_LOD -> boundTexture.setMaxLod(param);
+            case GL30.GL_TEXTURE_MAX_LOD -> {}
             case GL30.GL_TEXTURE_MIN_LOD -> {}
-            case GL30.GL_TEXTURE_LOD_BIAS -> {}
+            case GL30.GL_TEXTURE_LOD_BIAS -> {10}
 
             case GL11.GL_TEXTURE_MAG_FILTER -> boundTexture.setMagFilter(param);
             case GL11.GL_TEXTURE_MIN_FILTER -> boundTexture.setMinFilter(param);
@@ -256,7 +256,6 @@ public class GlTexture {
 
     boolean needsUpdate = false;
     int maxLevel = 0;
-    int maxLod = 0;
     int minFilter, magFilter = GL11.GL_LINEAR;
 
     boolean clamp = true;
@@ -362,15 +361,6 @@ public class GlTexture {
         }
     }
 
-    void setMaxLod(int l) {
-        if (l < 0)
-            throw new IllegalStateException("max level cannot be < 0.");
-
-        if (maxLod != l) {
-            maxLod = l;
-            updateSampler();
-        }
-    }
 
     void setMagFilter(int v) {
         switch (v) {
