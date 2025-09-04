@@ -219,7 +219,7 @@ public abstract class Options {
                                 value -> minecraftOptions.entityDistanceScaling().set(value * 0.01),
                                 () -> minecraftOptions.entityDistanceScaling().get().intValue() * 100),
                         new CyclingOption<>(Component.translatable("options.mipmapLevels"),
-                                new Integer[]{0, 1, 2, 3, 4},
+                                new Integer[]{0, 1, 2, 3, 4, 5, 6, 7, 8},
                                 value -> {
                                     minecraftOptions.mipmapLevels().set(value);
                                     minecraft.updateMaxMipLevel(value);
