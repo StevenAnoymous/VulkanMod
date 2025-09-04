@@ -66,7 +66,7 @@ public class GlRenderbuffer {
             case GL30.GL_TEXTURE_MAX_LEVEL -> bound.setMaxLevel(param);
             case GL30.GL_TEXTURE_MAX_LOD -> bound.setMaxLod(param);
             case GL30.GL_TEXTURE_MIN_LOD -> {}
-            case GL30.GL_TEXTURE_LOD_BIAS -> {10}
+            case GL30.GL_TEXTURE_LOD_BIAS -> {}
 
             case GL11.GL_TEXTURE_MAG_FILTER -> bound.setMagFilter(param);
             case GL11.GL_TEXTURE_MIN_FILTER -> bound.setMinFilter(param);
